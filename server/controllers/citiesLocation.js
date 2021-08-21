@@ -12,7 +12,7 @@ module.exports = async (req, res) => {
         .get(`https://api.postcodes.io/postcodes/${targetCities[0].postcode}`)
         .then((result) => {
           const { longitude, latitude } = result.data.result;
-          return { longitude: longitude, latitude: latitude };
+          return { longitude, latitude };
         })
         .catch((err) => {
           return;
