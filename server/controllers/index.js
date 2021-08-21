@@ -1,5 +1,4 @@
 module.exports = {
-    cities: require("./cities"),
-}
-    
-    
+  cities: require("./cities"),
+  citiesLocation: require("./citiesLocation"),
+};
